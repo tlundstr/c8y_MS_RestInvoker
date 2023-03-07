@@ -1,13 +1,19 @@
 package c8y.restinvoker;
 
+import org.springframework.boot.SpringApplication;
+
+import com.cumulocity.microservice.autoconfigure.MicroserviceApplication;
+
 /**
- * Hello world!
+ * 
  *
  */
+@MicroserviceApplication
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        //System.out.println( "Hello World!" );
+        SpringApplication.run(App.class, args);
     }
 }
